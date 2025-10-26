@@ -1,9 +1,23 @@
-/* Import Averia Serif Bold font */
 @font-face {
     font-family: 'AveriaSerif';
     src: url('../fonts/AveriaSerif-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+}
+
+/* Temporary debug styles */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'AveriaSerif', Georgia, serif;
+    font-weight: bold; /* Force bold since you only have bold version */
+}
+
+/* Add this to see if font is working */
+.debug-font:after {
+    content: "AveriaSerif is working!";
+    display: block;
+    color: limegreen;
 }
 
 /* Base styles */
