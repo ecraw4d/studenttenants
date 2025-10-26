@@ -1,1 +1,73 @@
+/* Import Averia Serif Bold font */
+@font-face {
+    font-family: 'AveriaSerif';
+    src: url('../fonts/AveriaSerif-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'AveriaSerif', Georgia, serif;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Logo styles */
+.logo-container {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Content styles */
+.blog-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.blog-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.blog-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .logo {
+        max-width: 150px;
+    }
+    
+    .blog-content h1 {
+        font-size: 2rem;
+    }
+    
+    .blog-content {
+        padding: 0 15px;
+    }
+}
