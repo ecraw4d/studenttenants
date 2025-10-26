@@ -5,21 +5,6 @@
     font-style: normal;
 }
 
-/* Temporary debug styles */
-body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'AveriaSerif', Georgia, serif;
-    font-weight: bold; /* Force bold since you only have bold version */
-}
-
-/* Add this to see if font is working */
-.debug-font:after {
-    content: "AveriaSerif is working!";
-    display: block;
-    color: limegreen;
-}
-
 /* Base styles */
 * {
     margin: 0;
@@ -27,14 +12,23 @@ body {
     box-sizing: border-box;
 }
 
+/* SINGLE body declaration - keep this one */
 body {
     background-color: #000000;
     color: #ffffff;
     font-family: 'AveriaSerif', Georgia, serif;
+    font-weight: bold; /* Add this */
     line-height: 1.6;
     padding: 20px;
     min-height: 100vh;
 }
+
+/* Remove the debug styles since they're causing conflicts */
+/* .debug-font:after {
+    content: "AveriaSerif is working!";
+    display: block;
+    color: limegreen;
+} */
 
 /* Logo styles */
 .logo-container {
