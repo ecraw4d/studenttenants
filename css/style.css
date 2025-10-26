@@ -13,20 +13,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'AveriaSerif';
-    src: url('../font/AveriaSerif-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-}
-
-/* Base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Debug styles */
 body {
     background-color: #000000;
     color: #ffffff;
@@ -37,53 +24,14 @@ body {
     min-height: 100vh;
 }
 
-/* Logo styles */
-.logo-container {
-    text-align: center;
-    padding: 4rem 0;
-    margin-bottom: 2rem;
-}
-
-.logo {
-    max-width: 250px;
-    height: auto;
-}
-
-/* Content styles */
-.blog-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.blog-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    font-weight: bold;
-}
-
-.blog-content p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    font-weight: normal;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-    
-    .logo {
-        max-width: 150px;
-    }
-    
-    .blog-content h1 {
-        font-size: 2rem;
-    }
-    
-    .blog-content {
-        padding: 0 15px;
-    }
+/* Add this debug element to see if font loads */
+body::before {
+    content: "Font test: AveriaSerif";
+    display: block;
+    font-family: 'AveriaSerif', serif;
+    font-size: 20px;
+    color: #00ff00;
+    margin-bottom: 20px;
+    border: 1px solid #00ff00;
+    padding: 10px;
 }
