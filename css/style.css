@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'AveriaSerif';
-    src: url('../font/AveriaSerif-Bold.ttf') format('truetype');
+    src: url('../font/AveriaSerif-Bold.woff2') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
