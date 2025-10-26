@@ -1,8 +1,23 @@
+/* Import Averia Serif fonts */
 @font-face {
     font-family: 'AveriaSerif';
-    src: url('../font/AveriaSerif-Bold.woff2') format('truetype');
+    src: url('../font/AveriaSerif-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'AveriaSerif';
+    src: url('../font/AveriaSerif-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AveriaSerif';
+    src: url('../font/AveriaSerif-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
 }
 
 /* Base styles */
@@ -12,23 +27,15 @@
     box-sizing: border-box;
 }
 
-/* SINGLE body declaration - keep this one */
 body {
     background-color: #000000;
     color: #ffffff;
-    font-family: 'AveriaSerif', Georgia, serif;
-    font-weight: bold; /* Add this */
+    font-family: 'AveriaSerif', serif;
+    font-weight: normal;
     line-height: 1.6;
     padding: 20px;
     min-height: 100vh;
 }
-
-/* Remove the debug styles since they're causing conflicts */
-/* .debug-font:after {
-    content: "AveriaSerif is working!";
-    display: block;
-    color: limegreen;
-} */
 
 /* Logo styles */
 .logo-container {
@@ -59,6 +66,7 @@ body {
 .blog-content p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    font-weight: normal;
 }
 
 /* Responsive design */
